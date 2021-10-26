@@ -1,0 +1,44 @@
+*,*:after, *before{
+	margin:0;
+	padding:0;
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box ;
+	box-sizing:border-box;  
+}
+#contenedor_carga{
+	background:url(../img/hacker.jpg);
+	min-width: 100%;
+	opacity: .9;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position:fixed;
+	-webkit-transition:all 1s ease; 
+	-moz-box-transition:all 1s ease ;
+	transition:all 1s ease;
+	z-index:10000;    
+}
+#carga{
+	border:15px solid #ccc;
+	border-top-color:#00DEF8;
+	border-top-style:groove;
+	height: 80px;
+	width: 80px;
+	border-radius: 100%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 90%;
+	bottom: 85%;
+	margin:auto;
+	-webkit-animation:girar 1.5s linear infinite;
+	-o.animation:girar 1.5s linear infinite;
+	animation:girar 1.5s linear infinite;
+
+}
+@keyframes girar {
+	from {transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}

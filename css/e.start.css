@@ -1,0 +1,247 @@
+*{
+	padding:0;
+	margin:0;
+	-webkit-box-sizing:border-box; 
+	-moz-box-sizing:border-box ;
+	box-sizing:border-box; 
+}
+.intro{
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	z-index:10000;
+}
+#contenedor_carga{
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transition:all 1s ease; 
+	-moz-box-transition:all 1s ease ;
+	transition:all 10s ease;
+	z-index:10000;
+}
+body{
+	background:url(../img/bg.jpg); 
+	background-size:1000px 800px; 
+	background-attachment:fixed; 
+	font-family:Oswald; 
+}
+.contenedor{
+	width:90%;
+	max-width:1000px; 
+	margin:auto;
+}
+#particles-js{
+	width: 100%;
+	height:100%;
+	position: fixed;
+	background:rgba(0,0,0,.8);   
+}
+header{
+	position:relative;
+	height:auto;
+}	
+header .menu{ 
+	background:rgba(255,255,255,.7); 
+	overflow:hidden;
+}
+header .logi{
+	color:rgba(0,0,0,.8); 
+	float:left;
+	font-size:30px; 
+	line-height:0px;   
+}
+header nav{
+	float:right;  
+}
+header nav ul{
+	list-style:none;
+	margin:auto;  
+}
+header nav ul li{
+	float:left;
+}
+header nav ul li a{
+	color:rgba(0,0,0,.8);
+	text-decoration:none;
+	margin:20px 25px;
+	padding:10px 15px;  
+	display:block;
+	font-size:18px;
+	padding:0 20px;
+	line-height:40px;      
+}
+header nav ul li:hover{
+	background:rgba(0,0,0,.8); 
+	color:#fff;  
+}
+header nav ul li a:hover{
+	color:#fff; 
+}
+.texto{
+	position:relative; 
+	color:#fff;
+	padding:40px 0;
+	text-align: center;
+	font-weight:400;
+	font-size: 50px;   
+}
+.texto h2{
+	padding:20px; 
+	letter-spacing:2.5px;
+	font-weight: normal; 
+	background:rgba(0,0,0,.6);
+	display:inline-block;  
+}
+.principal{
+	position:relative;
+	color:#000;
+}
+.principal article{
+	padding:20px;
+	background:#fff;
+	margin-bottom:20px;    
+}
+.principal article p{
+	text-align:justify; 
+	margin-bottom:20px;
+	line-height:24px;
+	font-family:helvetica;   
+}
+.principal article .fecha{
+	color:#939393;
+}
+.second{
+	position:relative;
+	color:#000;
+}
+.second article{
+	padding:20px;
+	background:#fff;
+	margin-bottom:20px;
+}
+.second article p{
+	text-align:justify; 
+	margin-bottom:20px;
+	line-height:24px;
+	font-family:helvetica; 
+}
+.second article .fecha{
+	color:#939393; 
+}
+.thre{
+	position:relative;
+	color:#000;
+
+}
+.thre article{
+	padding:20px;
+	background:#fff;
+	margin-bottom:20px;
+}
+.thre article p{
+	text-align:justify; 
+	margin-bottom:20px;
+	line-height:24px;
+	font-family:helvetica
+}
+.thre article .fecha{
+	color:#939393; 
+}
+.img1{
+	margin:10px; 
+	border-radius:3px;  
+}
+.img2{
+	margin:10px; 
+	border-radius:3px; 
+}
+.img3{
+	margin:10px 10px 0px 230px; 
+	border-radius:3px; 
+
+}
+.img4{
+	float:left;
+	margin:5px 10px 10px 3px;
+	border-radius:3px;   
+}
+.img5{
+	float:right;
+	margin:5px 3px 10px 10px;
+	border-radius:3px;
+}
+
+.social{
+	position:fixed;
+	left:0;
+	top:200px;
+	z-index:2000;   
+}
+.social ul{
+	list-style:none;
+}
+.social ul li a{
+	display: inline-block;
+	color:#fff;
+	background: #000; 
+	padding:10px 15px;
+	text-decoration:none;
+	-webkit-transition: all 300ms ease;
+  	-o-transition: all 300ms ease;
+ 	transition: all 300ms ease;  
+}
+.social ul li .icon-facebook{background:#2556F5;}
+.social ul li .icon-twitter{background:#00DEFF;}
+.social ul li .icon-google{background:#E3004B ;}
+.social ul li .icon-pinterest{background:#FFAE00 ;}
+.social ul li .icon-mail{background:#767676;}
+
+.social ul li a:hover{
+	padding:10px 30px;
+	background:#000;  
+}
+footer{
+	position:relative; 
+	color:rgba(0,0,0,.8);
+	background:rgba(255,255,255,.7);
+	width:100%;
+	height:100%; 
+	max-width:2000px; 
+	margin:0;
+	font-size:18px;
+	line-height:40px;
+	overflow:hidden; 
+	padding: 0; 
+ }
+ /*Boton Arriba*/
+ .ir-arriba{
+ 	display:none;
+ 	padding: 20px;
+ 	background: #000;
+ 	font-size: 34px;
+ 	color: #fff;
+ 	cursor: pointer;
+ 	position: fixed;
+ 	bottom:20px;
+ 	border:solid 2px #fff;
+ 	right:20px; 
+ 	z-index:2000;
+ }
+ /*Scroll Bar*/
+ body::-webkit-scrollbar  {
+ 	width:8px; 
+ 	background:rgba(0,0,0,.3); 
+
+ }
+ body::-webkit-scrollbar-thumb{
+ 	background: linear-gradient(#000000,#FFFFFF);
+ 	border-radius:5px; 
+ 	border-right:3px solid rgba(255,255,255,.2);
+ }
